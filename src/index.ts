@@ -46,6 +46,7 @@ import {
   GraphQLIBAN,
   GraphQLObjectID,
   GraphQLVoid,
+  GraphQLURLString,
 } from './scalars';
 
 export {
@@ -69,6 +70,7 @@ export {
   UnsignedFloat as UnsignedFloatTypeDefinition,
   UnsignedInt as UnsignedIntTypeDefinition,
   URL as URLTypeDefinition,
+  URLString as URLStringTypeDefinition,
   BigInt as BigIntTypeDefinition,
   Byte as ByteTypeDefinition,
   Long as LongTypeDefinition,
@@ -119,6 +121,7 @@ export {
   GraphQLUnsignedFloat as UnsignedFloatResolver,
   GraphQLUnsignedInt as UnsignedIntResolver,
   GraphQLURL as URLResolver,
+  GraphQLURLString as URLStringResolver,
   GraphQLBigInt as BigIntResolver,
   GraphQLByte as ByteResolver,
   GraphQLLong as LongResolver,
@@ -167,6 +170,7 @@ export const resolvers = {
   UnsignedFloat: GraphQLUnsignedFloat,
   UnsignedInt: GraphQLUnsignedInt,
   URL: GraphQLURL,
+  URLString: GraphQLURLString,
   BigInt: GraphQLBigInt,
   Byte: GraphQLByte,
   Long: GraphQLLong,

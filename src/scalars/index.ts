@@ -43,3 +43,4 @@ export { GraphQLJSONObject } from './json/JSONObject';
 export { GraphQLIBAN } from './IBAN';
 export { GraphQLObjectID } from './ObjectID';
 export { GraphQLVoid } from './Void';
+export { GraphQLURLString } from './URLString';

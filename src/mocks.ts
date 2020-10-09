@@ -1,12 +1,14 @@
+import faker from 'faker';
+
 const BigIntMock = () => BigInt(Number.MAX_SAFE_INTEGER);
 const ByteMock = () => new Uint8Array([1988, 1981, 1965, 1963, 1959, 1955]);
 const DateMock = () => '2007-12-03';
 export const Time = () => '10:15:30Z';
-export const DateTime = () => '2007-12-03T10:15:30Z';
+export const DateTime = () => faker.date.recent().toISOString();
 export const Timestamp = () => 1592577642;
 export const UtcOffset = () => '+03:00';
 export const ISO8601Duration = () => 'P3Y6M4DT12H30M5S';
-export const EmailAddress = () => 'test@test.com';
+export const EmailAddress = () => faker.internet.email();
 export const NegativeFloat = () => -123.45;
 export const NegativeInt = () => -123;
 export const NonEmptyString = () => 'string';
@@ -19,6 +21,7 @@ export const ObjectID = () => '5e5677d71bdc2ae76344968c';
 export const PositiveFloat = () => 123.45;
 export const PositiveInt = () => 123;
 export const PostalCode = () => '60031';
+export const URLString = () => faker.internet.url();
 const URLMock = () => new URL('http://www.test.com/') as any;
 // https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
 export const UUID = () => {

@@ -35,6 +35,7 @@ export const RGB = `scalar RGB`;
 export const RGBA = `scalar RGBA`;
 export const SafeInt = `scalar SafeInt`;
 export const URL = 'scalar URL';
+export const URLString = 'scalar URLString';
 export const USCurrency = `scalar USCurrency`;
 export const Currency = `scalar Currency`;
 
@@ -68,6 +69,7 @@ export const typeDefs = [
   UnsignedFloat,
   UnsignedInt,
   URL,
+  URLString,
   BigInt,
   Long,
   Byte,
